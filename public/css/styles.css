@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+body {
+    background-color: #ebebeb;
+}
+/* ----------HEADER----------- */
+
+/* ------------ FIN DEL HEADER--------*/
+/*-----------------------BANNER---------------------------
+.banner {
+    width: 100%;
+}
+
+p {
+    font-size: 12px;
+}
+
+.last-visit , .offers {
+    font-size: 24px;
+}
+
+.price {
+    font-size: 18px;
+}
+
+.discount,.description {
+    font-size: 16px;
+    font-weight: normal;
+}
+main {
+    width:90%;
+    margin: 0 auto;
+}
+main section article {
+    margin: 10px 0;
+}
+main section article img {
+    width: 100%;
+}
+
+main section article i{
+    color: #39b54a;
+}
+
+article div.main-article .discount {
+    color: #39b54a;
+}
+
+main section article i {
+    font-size: 16px;
+}
+
+article div.main-article .truck-icon-container {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid green;
+}
+main section h3 {
+    margin: 20px 0;
+}
+
+article div.main-article {
+    width: 100%;
+    border-top: 1px solid black;
+    padding: 10px;
+}
+h3, .description {
+    color: #666;
+}
+article div.main-article{
+    width: 100%;
+}
+
+main section article{
+    background-color: #fff;
+}
+
+@media (min-width: 460px) {
+    main {
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) {
+    .logo-container {
+        flex-direction: row;
+    }
+
+    .logo-bar-container {
+        width: 50%;
+    }
+
+    .card-container {
+        width: 50%;
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-container h2 {
+        font-size: 17px;
+    }
+    .burger-container {
+        display: none;
+    }
+    .menu-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    main {
+        border: 3px solid red;
+        width: 100%;
+    }
+
+    .last-visit, .offers {
+        border: 2px solid blue;
+    }
+
+    .main-article {
+        border: 15px;
+    }
+
+
+    ul {
+        /*border: 3px solid orange;
+        display: flex;
+        width: 45%;
+        justify-content: space-between;
+    }
+    .products{
+        border: 2px solid black;
+        display: flex;
+        /*padding: 10px;
+    }
+
+    
+
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+@media (min-width: 1024px) {
+    .card-container h2 {
+        font-size: 22px;
+    }
+    .products{
+        display: flex;
+    }
+}*/

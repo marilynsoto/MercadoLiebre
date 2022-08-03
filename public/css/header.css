@@ -1,0 +1,110 @@
+.header-container {
+    border: 3px solid black;
+    background-color: yellow;
+    width: auto;
+    font-size: 15px;
+}
+
+.logo-container {
+    border: 3px solid blue;
+}
+
+.logo-bar-container {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+
+.logo-bar-container div {
+    padding: 0px 3px;
+}
+.logo {
+    width: 30%;
+}
+.search-button-container {
+    width: 65%;
+}
+.search-container {
+    display: flex;
+    width: 100%;
+    font-size: 18px;
+}
+.search-container input {
+    width: 90%;
+}
+
+.search-container input, button {
+    border: 0px;
+    font-size: 10px;
+    background-color: white;
+    height: 27px;
+}
+.search-container input {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.search-container button {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.cart-container {
+    font-size: 15px;
+}
+
+.card-container {
+    text-align: center;
+    padding: 10px 0px;
+    border-bottom: 1px solid rgb(112, 109, 109);
+}
+
+.burger-container {
+    border: 3px solid red;
+    border-bottom: 1px solid rgb(112, 109, 109);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.burger-menu {
+    background-color:yellow;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-container {
+    border: 3px solid green;
+    display: none;
+}
+
+@media (min-width: 900px) {
+    .search-container input, button {
+        border: 0px;
+        font-size: 20px;
+        background-color: white;
+        height: 40px;
+    }
+    .cart-container {
+        font-size: 35px;
+    }
+    .burger-menu {
+        display: none;
+    }
+    .menu-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu-ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 0px;
+    }
+    
+    .menu-ul li {
+        padding: 0px 10px;
+    }
+}
