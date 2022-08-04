@@ -10,31 +10,107 @@ html {
 
 body {
     background-color: #ebebeb;
-}
-/* ----------HEADER----------- */
-
-/* ------------ FIN DEL HEADER--------*/
-/*-----------------------BANNER---------------------------
-.banner {
     width: 100%;
 }
 
-p {
-    font-size: 12px;
+.banner img {
+    width: 100%;
+}
+
+.main-container {
+    padding: 10px;
+    width: 100%;
 }
 
 .last-visit , .offers {
-    font-size: 24px;
+    /*border: 3px solid green;*/
+    padding: 5px;
+    border-bottom: 1px solid rgb(112, 109, 109);
 }
 
-.price {
+.last-visit h3, .offers h3 {
+    text-align: center;
     font-size: 18px;
 }
 
-.discount,.description {
-    font-size: 16px;
-    font-weight: normal;
+.product {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 10px 20px;
+    margin: 20px;
 }
+.product img {
+    width: 100%;
+}
+.truck-icon-container {
+    display: flex;
+    justify-content: flex-end;
+}
+.truck-icon-container i {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border: 1px solid green;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 15px;
+    
+}
+
+.price-discount {
+    display: flex;
+    justify-content: flex-start;
+}
+.price {
+    padding-right: 5px;
+}
+.truck-icon-container, .discount {
+    color: green;
+}
+
+.description , .price-discount {
+    padding-bottom: 5px;
+}
+
+@media (min-width:768px) {
+    .main-container {
+        font-size: 16px;
+        padding: 40px 10px;
+    }
+    .last-visit h3, .offers h3 {
+        padding: 10px 0px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .products-container {
+        display: flex;
+        padding: 0px 60px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .product {
+        width: 40%;
+    }
+    .truck-icon-container i {
+        width: 40px;
+        height: 40px;
+        font-size: 18px; 
+    }
+}
+
+@media (min-width:990px) {
+    .main-container {
+        padding: 50px 50px;
+    }
+    .products-container {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 0px 20px;
+    }
+    
+}
+/*
 main {
     width:90%;
     margin: 0 auto;
