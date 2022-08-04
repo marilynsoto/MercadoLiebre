@@ -7,7 +7,7 @@ app.use(express.static(pathPublic));
 
 //Crear rutas en constantes//
 const mainRouter = require('./routers/main');
-
+const usersRouter = require('./routers/users');
 //Uso de Templates Engines//
 app.set('view engine', 'ejs');
 
@@ -16,6 +16,7 @@ app.set('views', path.join(__dirname, '/views'));
 
 //Llamamos todas las rutas en la app//
 app.use('/', mainRouter);
+app.use('/', usersRouter);
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

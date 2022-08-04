@@ -1,0 +1,66 @@
+.main-login {
+    padding: 10% 10% 15%;
+    /*border: 3px solid green;*/
+    font-size: 14px;
+    max-width: 100%;
+}
+.title-login {
+    text-align: center;
+    font-size: 18px;
+    padding: 15px 0px;
+}
+.login-container {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 5% 15% 15%;
+    color: black;
+}
+
+.item-login , .remenber-forget , .item-login-submit{
+    padding: 8px 0px 4px;
+    width: 100%;
+}
+
+.item-login input,
+.item-login-submit input {
+    width: 100%;
+    padding: 5px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid yellow;
+}
+.remenber-forget , .remenber{
+    padding: 5% 0px;
+    font-size: 10px;
+}
+
+.item-login-submit input {
+    font-size: 14px;
+    background-color: yellow;
+}
+
+@media (min-width:540px) {
+    .main-login {
+        font-size: 18px;
+    }
+    .remenber-forget , .remenber{
+        font-size: 17px;
+    }
+}
+
+@media (min-width:768px) {
+    .main-login {
+        font-size: 25px;
+    }
+    .title-login{
+        font-size: 30px;
+    }
+    .remenber-forget {
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+    }
+}
+
+@media (min-width:1024px) {
+    
+}

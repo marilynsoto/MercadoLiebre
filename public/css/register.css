@@ -1,0 +1,67 @@
+.main-register {
+    padding: 5% 10% 5%;
+    font-size: 14px;
+    max-width: 100%;
+}
+.register-container {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    padding: 5% 5% 10%;
+    color: black;
+}
+.title-register {
+    text-align: center;
+    font-size: 16px;
+    padding: 15px 0px;
+}
+.item-register , 
+.item-register-date , 
+.item-register-profile,
+.item-register-interests,
+.item-register-file, 
+.item-register-submit-reset {
+    padding: 8px 0px 4px;
+    width: 100%;
+}
+.item-register-file input {
+    width: 100%;
+}
+.item-register input,
+.item-register-date input,
+.item-register-submit-reset input {
+    width: 100%;
+    padding: 5px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid yellow;
+}
+.item-register-submit-reset {
+    padding-top: 15px;
+}
+.item-register-submit-reset input {
+    background-color: yellow;
+}
+.submit-register {
+    padding-bottom: 15px;
+}
+@media (min-width:768px) {
+    .register-container {
+        padding: 10% 10% 15%;
+    }
+    .item-register-submit-reset {
+        display: flex;
+        align-items: center;
+    }
+    .submit-register {
+        padding-bottom: 0px;
+        padding-right: 15px;
+    }
+}
+@media (min-width:1024px) {
+    .main-register {
+        padding: 5% 20% 5%;
+        font-size: 18px;
+    }
+    .title-register {
+        font-size: 25px;
+    }
+}
