@@ -11,123 +11,53 @@
         <img src="images/img-home-banner.jpg" alt="Banner de Ofertas">
     </section>
     
-    <div class="main-container">
+    <main class="main-container">
         <section class="last-visit">
-            <h3>Basado en tu última visita</h3>
+            <div class="title-products">
+                <p>Basado en tu última visita</p>
+            </div>
             <div class="products-container">
+                <% visited.forEach(product => { %> 
                 <article class="product">
-                    <img src="images/img-cafetera-moulinex.jpg" alt="cafetera" class="product_img">
-                    <div class="main-product">
-                        <div class="truck-icon-container">
+                    <a href="/products/detail/<%= product.id %>">
+                        <img src="images/<%= product.image %>" alt="product">
+                        <div class="main-product">
                             <i class="fas fa-truck"></i>
+                            <div class="price-discount">
+                                <p class="price">$<%= product.price %> </p>
+                                <p class="discount"><%= product.discount %>% OFF</p>
+                            </div>
+                            <h4 class="description"><%= product.name %> </h4>
                         </div>
-                        <div class="price-discount">
-                            <p class="price">$6.770</p>
-                            <p class="discount">40% off</p>
-                        </div>
-                        <h4 class="description">Cafetera Moulinex</h4>
-                    </div>
+                    </a>
                 </article>
-                <article class="product">
-                    <img src="images/img-macbook-pro-2019.jpg" alt="Macbook 2019" class="product_img">
-                    <div class="main-product">
-                        <div class="truck-icon-container">
-                            <i class="fas fa-truck"></i>
-                        </div>
-                        <div class="price-discount">
-                            <p class="price">$230.000</p>
-                            <p class="discount">20% off</p>
-                        </div>
-                        <h4 class="description">Mackbook Pro 2019</h4>
-                    </div>
-                </article>
-                <article class="product">
-                    <img src="images/img-samsung-galaxy-s10.jpg" alt="Telefono Samsung s10" class="product_img">
-                    <div class="main-product">
-                        <div class="truck-icon-container">
-                            <i class="fas fa-truck"></i>
-                        </div>
-                        <div class="price-discount">
-                            <p class="price">$70.500</p>
-                            <p class="discount">10% off</p>
-                        </div>
-                        <h4 class="description">Samsung Galaxy S10</h4>
-                    </div>
-                </article>
-                <article class="product">
-                    <img src="images/img-tv-samsung-smart.jpg" alt="smart tv samsung" class="product_img">
-                    <div class="main-product">
-                        <div class="truck-icon-container">
-                            <i class="fas fa-truck"></i>
-                        </div>
-                        <div class="price-discount">
-                            <p class="price">$23.200</p>
-                            <p class="discount">5% off</p>
-                        </div>
-                        <h4 class="description">Tv Samsung 43"</h4>
-                    </div>
-                </article>
+                <% }); %> 
             </div>
         </section>
         <section class="offers">
-            <h3>Ofertas</h3>
-            <div class="products-container">
-                <article class="product">
-                    <img src="images/img-cafetera-moulinex.jpg" alt="cafetera" class="product_img">
-                    <div class="main-product">
-                        <div class="truck-icon-container">
-                            <i class="fas fa-truck"></i>
-                        </div>
-                        <div class="price-discount">
-                            <p class="price">$6.770</p>
-                            <p class="discount">40% off</p>
-                        </div>
-                        <h4 class="description">Cafetera Moulinex</h4>
-                    </div>
-                </article>
-                <article class="product">
-                    <img src="images/img-macbook-pro-2019.jpg" alt="Macbook 2019" class="product_img">
-                    <div class="main-product">
-                        <div class="truck-icon-container">
-                            <i class="fas fa-truck"></i>
-                        </div>
-                        <div class="price-discount">
-                            <p class="price">$230.000</p>
-                            <p class="discount">20% off</p>
-                        </div>
-                        <h4 class="description">Mackbook Pro 2019</h4>
-                    </div>
-                </article>
-                <article class="product">
-                    <img src="images/img-samsung-galaxy-s10.jpg" alt="Telefono Samsung s10" class="product_img">
-                    <div class="main-product">
-                        <div class="truck-icon-container">
-                            <i class="fas fa-truck"></i>
-                        </div>
-                        <div class="price-discount">
-                            <p class="price">$70.500</p>
-                            <p class="discount">10% off</p>
-                        </div>
-                        <h4 class="description">Samsung Galaxy S10</h4>
-                    </div>
-                </article>
-                <article class="product">
-                    <img src="images/img-tv-samsung-smart.jpg" alt="smart tv samsung" class="product_img">
-                    <div class="main-product">
-                        <div class="truck-icon-container">
-                            <i class="fas fa-truck"></i>
-                        </div>
-                        <div class="price-discount">
-                            <p class="price">$23.200</p>
-                            <p class="discount">5% off</p>
-                        </div>
-                        <h4 class="description">Tv Samsung 43"</h4>
-                    </div>
-                </article>
+            <div class="title-products">
+                <p>Ofertas</p>
             </div>
-        </section>
-    </div>
-    
+            <div class="products-container">
+                <% inSale.forEach(product => { %> 
+                <article class="product">
+                    <a href="/products/detail/<%= product.id %>">
+                        <img src="images/<%= product.image %>" alt="product">
+                        
+                        <div class="main-product">
+                            <i class="fas fa-truck"></i>
+                            <div class="price-discount">
+                                <p class="price">$<%= product.price %> </p>
+                                <p class="discount"><%= product.discount %>% OFF</p>
+                            </div>
+                            <h4 class="description"><%= product.name %> </h4>
+                        </div>
+                    </a>
+                </article>
+                <% }); %> 
+            </div>
+        </seccion>
+    </main>
 </body>
 <%- include('./partials/footer') %> 
 </footer>

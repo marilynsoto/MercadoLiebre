@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/head') %> 
+    </head>
+    <body>
+    
+        <%- include('./partials/header') %> 
+        </header>
+
+        <main class="main-register">
+            <div class="register-container">
+                <div class="title-register">
+                    <h3><i>Editando: <%= product.name %> </i></h3>
+                </div>
+                <form action="/products/edit/<%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+                    <div class="item-form"><label for="name">Nombre del producto</label></div>
+                    <div class="item-form"><input type="text" id="name" name="name" placeholder="<%= product.name %> "></div>
+                    <div class="item-form"><label for="price">Precio del producto</label></div>
+                    <div class="item-form"><input type="text" id="price" name="price" placeholder="<%= product.price %> "></div>
+                    <div class="item-form"><label for="discount">Descuento</label></div>
+                    <div class="item-form"><input type="text" id="discount" name="discount" placeholder="<%= product.discount %> "></div>
+                    <div class="item-form"><label for="category">Categoria</label></div>
+                    <div class="item-form">
+                        <select id="category" name="category">
+                            <option value="">Elegi</option>
+                            <option value="in-sale">En oferta</option>
+                            <option value="visited">Ultimos agregados</option>
+                        </select>
+                    </div>
+                    <div class="item-form"><label for="description">Description</label></div>
+                    <div class="item-form"><textarea name="description" id="description" rows="10" placeholder="<%= product.description %> "></textarea></div>
+                    <div class="item-register-submit-reset">
+                        <div class="submit-register"><input type="submit" value="GUARDAR PRODUCTO"></div>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <%- include('./partials/footer') %> 
+        </footer>
+    </body>
+</html>

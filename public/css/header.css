@@ -31,7 +31,8 @@
     width: 90%;
 }
 
-.search-container input, button {
+.search-container input, 
+.search-container button {
     border: 0px;
     font-size: 10px;
     background-color: white;
@@ -77,6 +78,9 @@
     /*border: 3px solid green;*/
     display: none;
 }
+.menu-item a {
+    text-decoration: none;
+}
 @media (min-width:768px) {
     .logo-bar-container {
         padding: 10px 20px;
@@ -85,7 +89,13 @@
     .user i {
         font-size: 30px;
     }
-    .search-container input, button {
+    .search-container input {
+        border: 0px;
+        font-size: 20px;
+        background-color: white;
+        height: 40px;
+    }
+    .search-container button {
         border: 0px;
         font-size: 20px;
         background-color: white;

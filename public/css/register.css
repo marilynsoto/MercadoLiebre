@@ -4,6 +4,7 @@
     max-width: 100%;
 }
 .register-container {
+    background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     padding: 5% 5% 10%;
     color: black;
@@ -13,7 +14,7 @@
     font-size: 16px;
     padding: 15px 0px;
 }
-.item-register , 
+.item-form , 
 .item-register-date , 
 .item-register-profile,
 .item-register-interests,
@@ -25,12 +26,19 @@
 .item-register-file input {
     width: 100%;
 }
-.item-register input,
+.item-form input,
+.item-form select,
 .item-register-date input,
 .item-register-submit-reset input {
     width: 100%;
     padding: 5px;
-    height: 25px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid yellow;
+}
+.item-form textarea {
+    width: 100%;
+    padding: 5px;
     border-radius: 5px;
     border: 1px solid yellow;
 }
